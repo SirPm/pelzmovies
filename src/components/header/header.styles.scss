@@ -1,0 +1,110 @@
+.header {
+    background-color: #272727;
+    padding: 1.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 1.8rem;
+    right: 1rem;
+    width: 28px;
+    height: 20px;
+    z-index: 400;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    
+    &__burger {
+        width: 28px;
+        height: 3px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 0.5rem;
+        right: 0;
+        transition: 0.5s ease-in-out;
+    }
+
+    &__burger::before {
+        content: '';
+        width: 28px;
+        top: -8px;
+        height: 3px;
+        background-color: #ffffff;
+        position: absolute;
+        transition: 0.5s ease-in-out;
+    }
+  
+    &__burger::after {
+        content: '';
+        width: 20px;
+        top: 8px;
+        height: 3px;
+        background-color: #ffffff;
+        position: absolute;
+        transition: 0.5s ease-in-out;
+    }
+  
+    &__burger.open {
+        transform: rotate(720deg);
+        background: transparent;
+    }
+      
+    &__burger.open::before {
+        transform: rotate(45deg) translate(5px, 8px);
+    }
+      
+    &__burger.open::after {
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -7px);
+    }
+
+
+}
+  
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.98;
+    visibility: hidden;
+    z-index: 200;
+    height: 100vh;
+    background-color: #272727;
+}
+  
+.nav.open {
+    visibility: visible;
+}
+  
+.nav-heading {
+    text-align: center;
+    margin-top: 15%;
+}
+  
+.nav .menu-nav {
+    display: flex;
+    list-style-type: none;
+    transform: translateY(-100%);
+    transition: 0.5s ease-in-out;
+    height: 70vh;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+    
+.nav .menu-nav.open {
+    transform: translateY(0);
+}
+    
+.nav .menu-nav__item {
+    transform: translateX(-100vw);
+    transition: 0.5s ease-in-out;
+}
+  
+.nav .menu-nav__item.open {
+    transform: translateX(0);
+}

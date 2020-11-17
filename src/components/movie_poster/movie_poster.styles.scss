@@ -1,0 +1,86 @@
+.movie_poster {
+    position: relative;
+    flex-basis: 47%;
+    margin-bottom: 5rem;
+    cursor: pointer;
+    width: 47%;
+
+    &:hover {
+
+        .play-icon-div {
+            display: flex;
+        }
+    }
+
+    &_card {
+        width: 100%;
+    }
+
+    &_img {
+        width: 100%;
+    }
+
+    &_content {
+        
+        .movie_poster_title {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.movie_poster_genre_div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .movie_poster_genre {
+        margin-right: 2%;
+    }
+
+    .movie_poster_genre::after {
+        content: ", ";
+    }
+
+    .movie_poster_genre:last-child::after {
+        content: "";
+    }
+}
+
+.percent {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #48ee3b;
+    background-color: rgba(26,25,31,0.7);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10%;
+    left: 10%;
+    letter-spacing: 0.4px;
+    font-size: 1.1rem;
+
+    &_num {
+        color: #ffffff;
+    }
+}
+
+.play-icon-div {
+    display: none;
+}
+
+.fa-play {
+    background-color: #ffffff;
+    color: #ff0000;
+    border-radius: 50%;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    top: 40%;
+    left: 35%;
+}
