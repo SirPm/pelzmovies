@@ -1,13 +1,20 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Header from './components/header/Header';
-import Homepage from './pages/homepage/Homepage'
+import Homepage from './pages/homepage/Homepage';
+import MoviePage from './pages/movie_page/MoviePage';
 
 const App = () => {
   return (
     <div className='app'>
-      <Header />
-      <Homepage />
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route exact path={'/'} component={Homepage} />
+          <Route path={`/movie/:movie_id`} component={MoviePage} />
+        </Switch>
+      </BrowserRouter>
     </div>
   )
 }

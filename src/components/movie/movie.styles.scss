@@ -1,0 +1,133 @@
+$primary-text-color: #ff4500;
+$secondary-text-color: #48ee3b;
+
+.movie {
+    width: 95%;
+    margin: auto;
+}
+
+.movie_img {
+
+    & img {
+        width: 100%;
+    }
+}
+
+/* .movie_content {
+    width: 95%;
+    margin: auto;
+} */
+
+.movie_title {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.air_date_div {
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+}
+
+.air_date, .genre {
+    color: $secondary-text-color;
+}
+
+.genre_div {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.genre_label {
+    width: 20%;
+}
+
+.genres {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .genre {
+        margin-right: 2%;
+    }
+
+    .genre::after {
+        content: ", ";
+    }
+
+    .genre:last-child::after {
+        content: "";
+    }
+}
+
+.movie_overview_heading, .crew_heading, .cast_heading, .movie_images_heading {
+    color: $secondary-text-color;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1.7rem;
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+.movie_overview {
+    font-size: 1.2rem;
+}
+
+.crew_member {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    height: 3.5rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    &_job {
+        color: $secondary-text-color;
+    }
+}
+
+.cast_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cast_member {
+    flex-basis: 47%;
+    margin-bottom: 3rem;
+}
+
+.cast_img_div {
+
+    img {
+        width: 100%;
+    }
+}
+
+.cast_details {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cast_character_name {
+    color: $secondary-text-color;
+}
+
+.movie_images_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie_image_div {
+    height: 185px;
+    overflow: hidden;
+    margin-bottom: 3.5rem;
+}
+
+.movie_image {
+    width: 100%;
+    height: 100%;
+}

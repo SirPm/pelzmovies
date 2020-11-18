@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import './header.styles.scss';
 
@@ -16,7 +17,7 @@ const Header = () => {
             </div>
             <nav className={` ${ open ? 'open' : '' } nav`}>                
                 <ul className={` ${ open ? 'open' : '' } menu-nav`}>
-                    <li className={` ${ open ? 'open' : '' } activeItem menu-nav__item`}><a href="!#" className="menu-nav__link">Test Link</a></li>
+                    <li className={` ${ open ? 'open' : '' } activeItem menu-nav__item`}><Link to="/" className="menu-nav__link" onClick={toggleMenu}>Home</Link></li>
                 </ul>
             </nav>
         </header>

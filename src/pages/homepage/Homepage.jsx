@@ -21,7 +21,7 @@ const Homepage = () => {
             const data = await res.json();
 
             setPopularMovies(data.results);
-            // console.log(data);
+            console.log(data);
 
         }
 
@@ -88,7 +88,7 @@ const Homepage = () => {
                 <h2 className='popular_movies_heading'>Popular Movies</h2>
                 <div className='popular_movies_inner_div'>
                     {
-                        popularMovies.map( ({ id, ...otherPopularMovieData }) => <MoviePoster key={id} genres={genres} { ...otherPopularMovieData }/> )
+                        popularMovies.map( ({ id, ...otherPopularMovieData }) => <MoviePoster key={id} id={id} genres={genres} { ...otherPopularMovieData }/> )
                     }
                 </div>
             </div>
@@ -96,7 +96,7 @@ const Homepage = () => {
                 <h2 className='upcoming_movies_heading'>Upcoming Movies</h2>
                 <div className='upcoming_movies_inner_div'>
                     {
-                        upcomingMovies.map( ({ id, ...otherUpcomingMovieData }) => <MoviePoster key={id} genres={genres} { ...otherUpcomingMovieData }/> )
+                        upcomingMovies.map( ({ id, ...otherUpcomingMovieData }) => <MoviePoster key={id} id={id} genres={genres} { ...otherUpcomingMovieData }/> )
                     }
                 </div>
             </div>
@@ -104,7 +104,7 @@ const Homepage = () => {
                 <h2 className='top_rated_movies_heading'>Top Rated Movies</h2>
                 <div className='top_rated_movies_inner_div'>
                     {
-                        topRatedMovies.map( ({ id, ...otherTopRatedMovieData }) => <MoviePoster key={id} genres={genres} { ...otherTopRatedMovieData }/> )
+                        topRatedMovies.map( ({ id, ...otherTopRatedMovieData }) => <MoviePoster key={id} id={id} genres={genres} { ...otherTopRatedMovieData }/> )
                     }
                 </div>
             </div>
