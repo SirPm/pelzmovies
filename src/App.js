@@ -12,7 +12,7 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path={'/'} component={Homepage} />
-          <Route path={`/movie/:movie_id`} component={MoviePage} />
+          <Route path={`/movies/:movie_id`} component={MoviePage} />
         </Switch>
       </BrowserRouter>
     </div>

@@ -1,3 +1,12 @@
+
+
+.movie_poster_loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .movie_poster {
     position: relative;
     flex-basis: 47%;
@@ -18,9 +27,11 @@
 
     &_img {
         width: 100%;
+        border-radius: 15px;
     }
 
     &_content {
+        margin-left: 5px;
         
         .movie_poster_title {
             font-size: 1.2rem;
@@ -32,6 +43,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 5px;
 
     .movie_poster_genre {
         margin-right: 2%;
@@ -46,10 +58,10 @@
     }
 }
 
-.percent {
+.movie_poster_percent {
     position: absolute;
     border-radius: 50%;
-    border: 1px solid #7e9c7c;
+    border: 2px solid #7e9c7c;
     background-color: rgba(26,25,31,0.7);
     width: 32px;
     height: 32px;

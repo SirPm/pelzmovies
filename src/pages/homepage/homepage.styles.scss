@@ -1,38 +1,9 @@
-$primary-text-color: #ff4500;
-$secondary-text-color: #48ee3b;
 
 
-.popular_movies_div, .upcoming_movies_div, .top_rated_movies_div {
-    width: 95%;
-    margin: auto;
-}
 
-.popular_movies_div {
-    padding-top: 10rem;
-}
-
-.upcoming_movies_div, .top_rated_movies_div {    
-    padding-top: 0;
-}
-
-.popular_movies_heading, .upcoming_movies_heading, .top_rated_movies_heading {
-    color: $primary-text-color;
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 3rem;
-}
-
-.popular_movies_heading::after, .upcoming_movies_heading::after, .top_rated_movies_heading::after {
-    content: "";
-    border-bottom: 1px solid grey;
-    display: block;
-    position: absolute;
-    width: 100%;
-    left: 0;
-}
-
-.popular_movies_inner_div, .upcoming_movies_inner_div, .top_rated_movies_inner_div {
+.homepage_loading {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
