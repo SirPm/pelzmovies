@@ -21,9 +21,9 @@ $secondary-text-color: #48ee3b;
 
 .upcoming_movies_heading {
     color: $primary-text-color;
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 3rem;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 30px;
 }
 
 .upcoming_movies_heading::after {
@@ -39,4 +39,12 @@ $secondary-text-color: #48ee3b;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+@media only screen and (min-width: 950px) {
+    
+    .upcoming_movies_inner_div {
+        justify-content: normal;
+    }
+
 }

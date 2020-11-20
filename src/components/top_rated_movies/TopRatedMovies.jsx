@@ -26,18 +26,16 @@ const TopRatedMovies = ({ genres }) => {
             {
                 !pending ? (
                     <div className='top_rated_movies_loaded'>
-                        <h2 className='top_rated_movies_heading'>Top Rated Movies</h2>
+                        {
+                            topRatedMovies ? ( <h2 className='top_rated_movies_heading'>Top Rated Movies</h2> ) : null
+                        }
                         <div className='top_rated_movies_inner_div'>
                             {
                                 topRatedMovies.map( ({ id, ...otherTopRatedMovieData }) => <MoviePoster key={id} id={id} genres={genres} { ...otherTopRatedMovieData } /> )
                             }
                         </div>
                     </div>
-                ) : (
-                    <div className='loading'>
-                        Loading...
-                    </div>
-                )
+                ) : null
             }
         </div>
     )

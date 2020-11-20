@@ -36,7 +36,7 @@ const PopularMovies = ({ genres }) => {
                     </div>
                 ) : (
                     <div className='loading'>
-                        <h1> Loading...</h1>
+                        <h2>This Awesome Website Will Be Fully Loaded Very Soon...</h2>
                     </div>
                 )
             }

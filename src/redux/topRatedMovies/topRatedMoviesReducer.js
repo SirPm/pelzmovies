@@ -2,7 +2,7 @@ import { TopRatedMoviesActionTypes } from './topRatedMoviesTypes';
 
 const INITIAL_STATE = {
     error: null,
-    pending: false,
+    pending: true,
     topRatedMovies: []
 }
 

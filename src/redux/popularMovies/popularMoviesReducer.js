@@ -1,7 +1,7 @@
 import { PopularMoviesActionTypes } from './popularMoviesTypes';
 
 const INITIAL_STATE = {
-    pending: false,
+    pending: true,
     error: null,
     popularMovies: []
 }

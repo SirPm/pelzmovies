@@ -89,7 +89,9 @@ const MoviePage = ({ match }) => {
                 ( movieData && castAndCrew && movieImages ) ? (
                     <Movie movieData={movieData} castAndCrew={castAndCrew} movieImages={movieImages} />
                 ) : (
-                    <span>Please wait a moment while we get the movie info...</span>
+                    <div className='loading'>
+                        <h2>Please wait a moment while we get the movie info...</h2>
+                    </div>
                 )
             }
         </div>

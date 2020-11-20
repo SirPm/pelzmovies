@@ -27,18 +27,16 @@ const UpcomingMovies = ({ genres }) => {
             {
                 !pending ? (
                     <div className='upcoming_movies_loaded'>
-                        <h2 className='upcoming_movies_heading'>Upcoming Movies</h2>
+                        {
+                            upcomingMovies ? ( <h2 className='upcoming_movies_heading'>Upcoming Movies</h2> ) : null
+                        }
                         <div className='upcoming_movies_inner_div'>
                             {
                                 upcomingMovies.map( ({ id, ...otherUpcomingMovieData }) => <MoviePoster key={id} id={id} genres={genres} { ...otherUpcomingMovieData } /> )
                             }
                         </div>
                     </div>
-                ) : (
-                    <div className='loading'>
-                        Loading...
-                    </div>
-                )
+                ) : null
             }
         </div>
     )

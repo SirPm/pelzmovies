@@ -1,7 +1,7 @@
 import { UpcomingMoviesActionTypes } from './upcomingMoviesTypes';
 
 const INITIAL_STATE = {
-    pending: false,
+    pending: true,
     upcomingMovies: [],
     error: null
 }
