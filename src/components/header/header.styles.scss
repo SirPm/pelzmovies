@@ -7,11 +7,16 @@
     z-index: 500;
 
     &_inner_div {
-        width: 95%;
+        width: 90%;
         margin: auto;
         display: flex;
         align-items: center;
     }
+}
+
+.logo_link {
+    display: block;
+    text-decoration: none;
 }
 
 .logo {

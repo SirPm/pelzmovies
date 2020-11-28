@@ -49,7 +49,7 @@ const Header = () => {
     return (
         <header className='header'>
             <div className="header_inner_div">
-                <div><Logo className='logo' /></div>
+                <Link className='logo_link' to='/'><Logo className='logo' /></Link>
                 <div className='search_input_div'>
                     <input 
                         type='text' 

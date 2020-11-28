@@ -11,7 +11,7 @@ $secondary-text-color: #48ee3b;
 
 
 .upcoming_movies_div {
-    width: 95%;
+    width: 92%;
     margin: auto;
 }
 
@@ -24,6 +24,7 @@ $secondary-text-color: #48ee3b;
     font-size: 30px;
     font-weight: 300;
     margin-bottom: 30px;
+    margin-left: 1%;
 }
 
 .upcoming_movies_heading::after {
@@ -45,6 +46,14 @@ $secondary-text-color: #48ee3b;
     
     .upcoming_movies_inner_div {
         justify-content: normal;
+    }
+
+    .popular_movies_div {
+        width: 95%;
+    }
+    
+    .popular_movies_heading {
+        margin-left: 0;
     }
 
 }

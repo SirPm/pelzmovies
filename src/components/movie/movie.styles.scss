@@ -2,7 +2,7 @@ $primary-text-color: #ff4500;
 $secondary-text-color: #48ee3b;
 
 .movie {
-    width: 95%;
+    width: 90%;
     margin: auto;
 }
 
@@ -282,6 +282,10 @@ $secondary-text-color: #48ee3b;
 
 
 @media only screen and (min-width: 950px) {
+
+    .movie {
+        width: 95%;
+    }    
 
     .movie_img_and_content {
         display: flex;
